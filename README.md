@@ -1,135 +1,166 @@
 # 💬 Streamify — Real-Time Chat & Video Calling App
 
-A full-stack real-time messaging and video calling platform built with **React 19**, **Vite**, and fully powered by the **Stream.io SDKs**. Inspired by apps like WhatsApp and Slack, this project features threaded messaging, emoji reactions, live typing indicators, call history, and 32+ customizable themes — all deployed on modern infrastructure with production-grade tools.
+**Streamify** is a real-time messaging and video calling app built with **React 19**, **Vite**, **TailwindCSS**, **Zustand**, and powered entirely by **Stream.io SDKs**. It supports friend requests, threaded replies, live typing indicators, emoji reactions, 1-on-1 video calls, and a theme switcher with 32+ stunning DaisyUI themes.
+
+---
+
+## 📸 Preview
+
+> 🔗 **Live Demo**: https://streamify.vercel.app *(replace with your deployed URL)*
+
+| Chat UI | Video Call |
+|--------|-------------|
+| ![Chat UI](./assets/chat-preview.png) | ![Video Call](./assets/video-call.png) |
 
 ---
 
 ## 🚀 Features
 
-✅ Real-time 1-on-1 Messaging  
-✅ Video Calling via **Stream Video SDK**  
-✅ Friend Requests (Accept / Reject flow)  
-✅ Threaded Replies to Messages (Slack-style)  
-✅ Emoji Reactions (Stream-native)  
-✅ Typing Indicators (Live via Stream SDK)  
-✅ Online / Offline Status and Presence  
-✅ Call History Tracking  
-✅ Push Notifications (Toast-based)  
-✅ 32 DaisyUI Themes — Light, Dark, Cyberpunk, etc.  
-✅ Media Sharing (Images / Voice Notes / Docs)  
-✅ Persistent Authentication Flow  
-✅ Fully Responsive UI  
-✅ Built using **Vite**, **Zustand**, **TailwindCSS**, and **React Query**
+- 💬 Real-time chat (Stream Chat SDK)
+- 📞 1-on-1 video calling (Stream Video SDK)
+- 🧑‍🤝‍🧑 Friend request system (accept/reject)
+- 🔁 Threaded replies
+- 😀 Emoji reactions
+- ✍️ Typing indicators
+- 🟢 Online/offline presence
+- 🔔 Toast notifications
+- 🎨 32+ themes via DaisyUI
+- 📁 Media sharing (images, voice)
+- 🔐 Token-based login flow
+- 💡 Modern UI with TailwindCSS
+- 🧠 State management with Zustand
+- 🪄 Auto-theme persistence via localStorage
 
 ---
 
 ## ⚙️ Tech Stack
 
-### 🔧 Frontend
-
+### Frontend
 - [React 19](https://react.dev/)
 - [Vite](https://vitejs.dev/)
 - [Zustand](https://github.com/pmndrs/zustand)
-- [Tailwind CSS](https://tailwindcss.com/) + [DaisyUI](https://daisyui.com/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [DaisyUI](https://daisyui.com/)
 - [React Router 7](https://reactrouter.com/)
-- [TanStack React Query](https://tanstack.com/query)
+- [React Query](https://tanstack.com/query)
 - [Lucide React](https://lucide.dev/)
 - [React Hot Toast](https://react-hot-toast.com/)
 
-### 📡 Real-Time & Video Infrastructure (Powered by [Stream.io](https://getstream.io/))
-
-- **Stream Chat SDK** – Messaging, threads, emoji reactions, typing indicators, user presence  
-- **Stream Video React SDK** – WebRTC-based video calls (abstracted SDK integration)  
-- **No Socket.IO or Custom Signaling Logic** – All real-time operations handled via Stream SDKs
-
----
-
-## 🖼️ Preview
-
-| Chat UI | Video Call |
-|--------|-------------|
-| ![chat-ui](./assets/chat-preview.png) | ![video-call](./assets/video-call.png) |
-
-*(Add your actual screenshots in the `/assets` folder)*
+### Real-Time Infrastructure
+- **Stream Chat SDK**
+- **Stream Video React SDK**
+- ✅ No Socket.IO or raw WebRTC — all handled by Stream
 
 ---
 
-## 📁 Project Structure
+## 📁 Folder Structure
 
-```bash
-frontend/
+```
+streamify/
 ├── public/
+│   └── index.html
 ├── src/
 │   ├── assets/
 │   ├── components/
 │   ├── hooks/
 │   ├── pages/
 │   ├── services/
-│   ├── store/         # Zustand state
-│   ├── themes/        # DaisyUI themes
+│   ├── store/
+│   ├── themes/
 │   ├── utils/
 │   ├── App.jsx
 │   └── main.jsx
+├── .env
+├── package.json
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── .eslintrc.js
-└── package.json
-🛠️ Installation & Setup
-1. Clone the Repo
-bash
-Copy
-Edit
-git clone https://github.com/your-username/streamconnect.git
-cd streamconnect
-2. Install Dependencies
-bash
-Copy
-Edit
+└── README.md
+```
+
+---
+
+## 🛠️ Getting Started (Installation & Setup)
+
+### ✅ 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/streamify.git
+cd streamify
+```
+
+### ✅ 2. Install Dependencies
+
+```bash
 npm install
-3. Environment Variables
-Create a .env file in the root:
+```
 
-env
-Copy
-Edit
+### ✅ 3. Configure Environment Variables
+
+Create a `.env` file in the root directory and add the following:
+
+```env
 VITE_STREAM_API_KEY=your_stream_api_key
-VITE_STREAM_USER_TOKEN=your_stream_user_token
-VITE_BACKEND_URL=http://localhost:5000
-⚠️ Get your Stream credentials at: https://getstream.io/dashboard/
+VITE_STREAM_USER_TOKEN=your_user_token
+```
 
-4. Start the Dev Server
-bash
-Copy
-Edit
+> 🔐 Get your Stream credentials from [https://getstream.io/dashboard](https://getstream.io/dashboard)
+
+---
+
+## ▶️ Running the App Locally
+
+```bash
 npm run dev
-🌈 Theme Selector
-Includes 32+ prebuilt DaisyUI themes including:
+```
 
-Light, Dark, Cupcake, Cyberpunk, Retro, Wireframe, Dracula, etc.
+Then visit [http://localhost:5173](http://localhost:5173) in your browser.
 
-User preference is stored with localStorage
+---
 
-Easily extendable via tailwind.config.js
+## 🚀 Deployment Instructions
 
-🔐 Authentication
-Secure login & registration with token-based flow
+1. Push code to GitHub
+2. Connect repo to Vercel / Netlify
+3. Add the required `.env` variables in dashboard
+4. Deploy
 
-Auth token stored in browser context
+---
 
-User sessions persist across refresh
+## 🌈 Theme System
 
-📦 Deployment (Optional)
-Frontend: Vercel or Netlify
+This project uses **DaisyUI's 32+ themes**:
 
-Backend: Render, Railway
+- light, dark, cupcake, dracula, cyberpunk, luxury, synthwave, forest, etc.
 
-Stream: Messaging and video infra hosted on https://getstream.io
+Modify in `tailwind.config.js`:
 
-Want to try the app? 👉 Live Demo (update with actual link)
+```js
+daisyui: {
+  themes: ["light", "dark", "cupcake", "dracula", "cyberpunk", "luxury", "forest"]
+}
+```
 
-🧠 Design Decisions
-Stream.io SDKs are used for real-time infra to simulate production systems
+Themes are persisted using `localStorage`.
 
-Avoids reinventing WebRTC or Socket layers — offloads complexity to a scalable API
+---
 
-Focus on building user experience, polish, and UI/UX consistency
+## 🧠 Architectural Choices
+
+- Clean modular architecture (components, services, store)
+- Zustand for client state, React Query for async/server state
+- Stream.io handles all real-time logic (no WebRTC/Sockets to maintain)
+- ESLint and Prettier for consistent code
+- Vite for blazing-fast dev experience
+
+---
+
+## 📜 License
+
+Licensed under the [MIT License](./LICENSE)
+
+---
+
+
+
+
