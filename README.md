@@ -85,7 +85,7 @@ streamify/
 ### ✅ 1. Clone the Repository
 
 ```bash
-[git clone https://github.com/Par-zeus/Streamify.git]
+git clone https://github.com/Par-zeus/Streamify.git
 cd streamify
 ```
 
