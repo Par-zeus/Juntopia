@@ -16,7 +16,7 @@ It represents a space where communication is seamless, beautiful, and deeply hum
 
 | Chat UI | Video Call |
 |--------|-------------|
-| (![image](https://github.com/user-attachments/assets/33fab950-0db9-44b0-8fa5-a0ce5f8330ca) | (![image](https://github.com/user-attachments/assets/6ff09fad-56d4-4a35-ae38-3a6b6ee95879) |
+| ![image](https://github.com/user-attachments/assets/33fab950-0db9-44b0-8fa5-a0ce5f8330ca) | ![image](https://github.com/user-attachments/assets/6ff09fad-56d4-4a35-ae38-3a6b6ee95879) |
 
 
 ![HomePage](https://github.com/user-attachments/assets/ca0596bd-f491-44c8-ac96-fbd730a89e23)
