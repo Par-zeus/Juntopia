@@ -37,7 +37,6 @@ Originally envisioned as a **language learning platform**, Juntopia evolved into
 - 🧠 State management with Zustand
 - 💡 Theme persistence with localStorage
 - 🔐 Login authentication via token system
-- 🖼️ Media support (images, voice notes)
 
 ---
 
