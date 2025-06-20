@@ -12,11 +12,12 @@ It represents a space where communication is seamless, beautiful, and deeply hum
 
 > 🔗 **Live Demo**: https://juntopia.vercel.app *(replace with your deployed URL)*
 
+
+
 | Chat UI | Video Call |
 |--------|-------------|
-| ![Chat UI](![image](https://github.com/user-attachments/assets/33fab950-0db9-44b0-8fa5-a0ce5f8330ca)
- | ![Video Call](![image](https://github.com/user-attachments/assets/6ff09fad-56d4-4a35-ae38-3a6b6ee95879)
- |
+| ![Chat UI](![image](https://github.com/user-attachments/assets/33fab950-0db9-44b0-8fa5-a0ce5f8330ca) | ![Video Call](![image](https://github.com/user-attachments/assets/6ff09fad-56d4-4a35-ae38-3a6b6ee95879) |
+
 
 ![HomePage](https://github.com/user-attachments/assets/ca0596bd-f491-44c8-ac96-fbd730a89e23)
 ![Notofications UI](https://github.com/user-attachments/assets/0f457e38-b3c9-4a53-b47d-17cd4f94bd28)
