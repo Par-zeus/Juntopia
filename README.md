@@ -1,10 +1,10 @@
-# 🌐 Juntopia — Your Chat Utopia
+# 🌐 Juntopia — Real-Time Chat & Language Learning Utopia
 
 **Juntopia** is derived from two words:  
 - **Junto** (Spanish): *Together*  
 - **Utopia** (Greek): *An ideal place*  
 
-It represents a space where communication is seamless, beautiful, and deeply human. Whether you're chatting, video calling, or just vibing through emoji reactions — Juntopia is where connections feel natural.
+Originally envisioned as a **language learning platform**, Juntopia evolved into a seamless communication space focused on **real-time conversation**, **video calling**, and **community interaction** — all essential to immersive language practice. It's a place where users can **connect, speak, and learn** together.
 
 ---
 
