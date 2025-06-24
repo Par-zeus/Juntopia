@@ -10,9 +10,6 @@ Originally envisioned as a **language learning platform**, Juntopia evolved into
 
 ## 📸 Preview
 
-> 🔗 **Live Demo**: https://juntopia.vercel.app *(replace with your deployed URL)*
-
-
 
 | Chat UI | Video Call |
 |--------|-------------|
